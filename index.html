@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fc">
+  <meta name="description" content="Portfolio — selected work, experience, and insights in business analysis and technology.">
+  <title>Christopher Alexander | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="data/portfolio-fallback.js" defer></script>
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" id="brand" href="#top" aria-label="Back to top">XANDER<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" id="theme-toggle" title="Toggle color theme" aria-label="Toggle color theme">◐</button>
+        <a class="header-sign-in" href="Sign-In.html" aria-label="Sign in to portfolio CMS">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/><path d="M12 3h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-6"/></svg>
+          <span>Sign In</span>
+        </a>
+        <a class="header-contact" href="#contact">Let's connect <span>↗</span></a>
+        <button class="mobile-menu-btn" type="button" id="mobile-menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav shell" aria-label="Mobile navigation" hidden>
+      <a href="#about">About</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="top" class="shell hero-section">
+      <div class="hero-grid">
+        <div class="hero-main surface">
+          <div class="intro-line"><span class="signal"></span><span id="availability">Open to new opportunities</span><span class="intro-line-separator"></span><span id="eyebrow">PORTFOLIO / 2026</span></div>
+          <p class="hero-overline" id="hero-role">IT Business Analyst</p>
+          <h1 id="hero-headline">Bridging business needs with <span>thoughtful digital solutions.</span></h1>
+          <p class="hero-copy" id="hero-intro">I turn business requirements into meaningful digital experiences.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#work">Explore my work <span>↗</span></a>
+            <a class="btn btn-soft" id="cv-link" href="#" target="_blank" rel="noopener noreferrer">View résumé <span>↗</span></a>
+          </div>
+          <div class="hero-bottom"><span class="grid-mark">✳</span><span>Curiosity meets structure.</span><span class="hero-bottom-rule"></span><span id="hero-location">Indonesia</span></div>
+        </div>
+        <div class="hero-side">
+          <div class="portrait-card surface">
+            <img id="portrait" src="assets/profile.jpg" alt="Portrait of Christopher Alexander Sutandhya">
+            <div class="portrait-caption"><span class="portrait-icon">✳</span><span><small>HELLO, I'M</small><strong id="portrait-name">Christopher Alexander</strong></span></div>
+          </div>
+          <div class="identity-card surface"><div><span class="meta-label">WHAT I DO</span><h2 id="identity-role">Business analysis<br>& digital solutions.</h2></div><span class="identity-icon">↗</span></div>
+        </div>
+      </div>
+      <div id="highlights" class="highlights-grid"></div>
+    </section>
+
+    <section id="about" class="shell block-section section-reveal">
+      <div class="section-heading section-heading-split"><div><p class="section-kicker"><span class="kicker-line"></span>01 / INTRODUCTION</p><h2>A little about <em>myself.</em></h2></div><p class="section-aside">A problem solver with an eye for the bigger picture.</p></div>
+      <div class="about-grid"><div class="about-quote surface"><span class="quote-glyph">“</span><p>Make complex things <span>clear, useful, and human.</span></p><div class="quote-decoration">↗</div></div><div class="about-description surface"><div class="about-caption"><span class="mini-star">✦</span> MY PERSPECTIVE</div><p id="about-text"></p><div class="about-tags" id="about-tags"><span>Analytical thinking</span><span>User-centric design</span><span>Continuous improvement</span></div></div></div>
+    </section>
+
+    <section id="work" class="shell block-section section-reveal">
+      <div class="section-heading"><div><p class="section-kicker"><span class="kicker-line"></span>02 / SELECTED PROJECTS</p><h2>Selected <em>work.</em></h2></div><p class="section-aside">Real projects, thoughtful approaches, and outcomes.</p></div>
+      <div id="projects-list" class="projects-grid"></div>
+      <div id="projects-empty" class="empty-state" hidden>No published projects yet.</div>
+    </section>
+
+    <section id="experience" class="shell block-section section-reveal">
+      <div class="section-heading"><div><p class="section-kicker"><span class="kicker-line"></span>03 / MY JOURNEY</p><h2>Experience & <em>involvement.</em></h2></div><p class="section-aside">The different roles that shaped how I think and work.</p></div>
+      <div class="experience-grid"><div class="exp-intro surface"><div class="exp-intro-star">✳</div><h3>Learning through doing.</h3><p>Every experience is a chance to bring fresh ideas to a team and grow along the way.</p><div class="exp-intro-orbit" aria-hidden="true"></div></div><div class="timeline surface" id="experience-list"></div></div>
+    </section>
+
+    <section id="skills" class="shell block-section section-reveal"><div class="section-heading"><div><p class="section-kicker"><span class="kicker-line"></span>04 / MY TOOLKIT</p><h2>Skills & <em>capabilities.</em></h2></div><p class="section-aside">A multidisciplinary toolkit for turning ideas into action.</p></div><div id="skills-list" class="skills-grid"></div></section>
+
+    <section id="achievements" class="shell block-section section-reveal"><div class="section-heading"><div><p class="section-kicker"><span class="kicker-line"></span>05 / MILESTONES</p><h2>Achievements & <em>recognition.</em></h2></div><p class="section-aside">Meaningful milestones along the journey.</p></div><div id="achievements-list" class="awards-grid"></div></section>
+
+    <section id="credentials" class="shell block-section section-reveal"><div class="section-heading"><div><p class="section-kicker"><span class="kicker-line"></span>06 / LEARNING</p><h2>Education & <em>certifications.</em></h2></div></div><div class="credentials-grid"><div class="credential-panel surface"><div class="panel-top"><span>EDUCATION</span><span>↗</span></div><div id="education-list"></div></div><div class="credential-panel surface"><div class="panel-top"><span>CERTIFICATIONS</span><span>↗</span></div><div id="certifications-list"></div></div></div></section>
+
+    <section id="contact" class="shell contact-section section-reveal"><div class="contact-panel"><div class="contact-orb" aria-hidden="true"></div><p class="section-kicker contact-kicker">07 / LET'S TALK</p><h2>Let's build something <em>meaningful.</em></h2><p>Have an opportunity, a project, or a good conversation in mind? I'd love to hear from you.</p><div class="contact-actions"><a id="email-link" class="btn btn-white" href="mailto:christalexander2004@gmail.com">Get in touch <span>↗</span></a><a id="linkedin-link" class="contact-link" hidden>LinkedIn ↗</a><a id="github-link" class="contact-link" hidden>GitHub ↗</a></div><span class="contact-corner">✳</span></div></section>
+  </main>
+  <footer class="shell footer"><a class="brand footer-brand" href="#top" id="footer-brand">XANDER<span class="brand-dot">.</span></a><span id="footer-copy">© 2026 Christopher Alexander. Designed with clarity. Built with purpose.</span><a id="admin-link" href="Sign-In.html" hidden>Admin</a><a href="#top">Back to top ↑</a></footer>
+  <div id="site-error" role="alert" class="load-error" hidden>Portfolio data could not be loaded. Check that data/portfolio.json and data/portfolio-fallback.js exist and are valid.</div>
+</body>
+</html>

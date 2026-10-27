@@ -1,0 +1,9 @@
+'use strict';
+const field=id=>document.getElementById(id);
+field('login-year').textContent=new Date().getFullYear();
+if(sessionStorage.getItem('xander_cms_session')==='active')location.replace('admin.html');
+field('reveal-password').addEventListener('click',()=>{const show=field('password').type==='password';field('password').type=show?'text':'password';field('reveal-password').textContent=show?'Hide':'Show';});
+const fromHex=hex=>new Uint8Array(hex.match(/.{2}/g).map(x=>parseInt(x,16)));
+const equalBytes=(left,right)=>{if(left.length!==right.length)return false;let mismatch=0;for(let i=0;i<left.length;i++)mismatch|=left[i]^right[i];return mismatch===0;};
+async function verify(username,password){const conf=window.XANDER_AUTH;if(!window.crypto?.subtle)throw Error('Secure context required: open over HTTPS or localhost.');const key=await crypto.subtle.importKey('raw',new TextEncoder().encode(password),'PBKDF2',false,['deriveBits']);const bits=await crypto.subtle.deriveBits({name:'PBKDF2',salt:fromHex(conf.salt),iterations:conf.iterations,hash:'SHA-256'},key,256);return username===conf.username && equalBytes(new Uint8Array(bits),fromHex(conf.verifier));}
+field('login-form').addEventListener('submit',async e=>{e.preventDefault();const button=field('login-button');const username=field('username').value.trim(),password=field('password').value;field('login-error').textContent='';button.disabled=true;button.textContent='Checking credentials…';try{if(await verify(username,password)){sessionStorage.setItem('xander_cms_session','active');location.assign('admin.html');}else{field('login-error').textContent='Invalid username or password.';field('password').value='';}}catch(error){field('login-error').textContent=error.message;}finally{button.disabled=false;button.innerHTML='Sign in to CMS <span>→</span>';}});

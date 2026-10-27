@@ -1,0 +1,313 @@
+{
+  "site": {
+    "brand": "XANDER.",
+    "eyebrow": "PORTFOLIO / 2026",
+    "metaTitle": "Christopher Alexander Sutandhya | IT Business Analyst",
+    "metaDescription": "Explore the work, experience, projects, and achievements of Christopher Alexander Sutandhya — IT Business Analyst.",
+    "accent": "blue",
+    "theme": "light",
+    "footerText": "Designed with clarity. Built with purpose.",
+    "showAdminLink": false
+  },
+  "profile": {
+    "name": "Christopher Alexander Sutandhya",
+    "shortName": "Christopher Alexander",
+    "role": "IT Business Analyst",
+    "headline": "Bridging business needs with thoughtful digital solutions.",
+    "intro": "I turn complex business requirements into structured processes, intuitive experiences, and practical technology solutions.",
+    "about": "With a background in Information Systems and Business Analytics, I enjoy connecting people, processes, and technology. My work spans business analysis, financial analysis, and UI/UX design, with an emphasis on clarity, collaboration, and measurable value.",
+    "location": "Indonesia",
+    "email": "christalexander2004@gmail.com",
+    "photo": "assets/profile.jpg",
+    "resumeUrl": "https://drive.google.com/file/d/1TiKoZfyy64wsg20YHvpw5-K7BlTwm-xi/view?usp=sharing",
+    "availability": "Open to new opportunities",
+    "highlights": [
+      {
+        "label": "Core focus",
+        "value": "Business Analysis"
+      },
+      {
+        "label": "Approach",
+        "value": "People × Process × Tech"
+      },
+      {
+        "label": "Background",
+        "value": "Information Systems"
+      }
+    ]
+  },
+  "socials": {
+    "linkedin": "",
+    "github": "",
+    "instagram": "https://www.instagram.com/christalexander_2004/",
+    "other": ""
+  },
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Daksanaya Learning Management System",
+      "category": "UI/UX Design",
+      "period": "Portfolio project",
+      "summary": "Designed a learning management system prototype, focusing on a clear user journey and an approachable interface.",
+      "challenge": "Organize a learning experience into a more intuitive digital interface.",
+      "contribution": "UI/UX design, interaction flow, and interactive Figma prototyping.",
+      "result": "Interactive prototype available for review; impact metrics have not been provided.",
+      "tags": [
+        "Figma",
+        "UI/UX",
+        "Prototyping"
+      ],
+      "image": "assets/daksanaya.jpeg",
+      "url": "https://www.figma.com/proto/vLul2TBSwrCdhawBSscyH8/Daksanaya-Management?page-id=0%3A1&node-id=3-769&node-type=canvas&viewport=457%2C57%2C0.03&t=Kq4t5ITauIYVbWhm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=3%3A656",
+      "featured": true,
+      "published": true
+    },
+    {
+      "id": "p2",
+      "title": "Profitable Shareholding Analysis",
+      "category": "Financial Analytics",
+      "period": "Portfolio project",
+      "summary": "Financial analysis project focused on evaluating profitable shareholding opportunities and presenting insights for decision-making.",
+      "challenge": "Turn financial information into structured investment analysis.",
+      "contribution": "Data analysis, analytical reasoning, and financial reporting.",
+      "result": "Project documentation available; quantified outcomes were not provided.",
+      "tags": [
+        "Financial Analysis",
+        "Excel",
+        "Analytics"
+      ],
+      "image": "assets/daksanaya.jpeg",
+      "url": "https://drive.google.com/drive/folders/1U-I94utq2CIXS4VZHWcjQI5Hm9Q-gWNu?usp=sharing",
+      "featured": true,
+      "published": true
+    }
+  ],
+  "experiences": [
+    {
+      "id": "e1",
+      "role": "Financial Analyst",
+      "company": "PT Daksanaya Manajemen",
+      "period": "Previous experience",
+      "type": "Internship / Project",
+      "description": "Worked on profitable shareholding analysis and finance-related analytical deliverables.",
+      "logo": "assets/daksanaya.jpeg",
+      "url": "",
+      "published": true
+    },
+    {
+      "id": "e2",
+      "role": "UI/UX Designer",
+      "company": "PT Daksanaya Manajemen",
+      "period": "Previous experience",
+      "type": "Internship / Project",
+      "description": "Contributed to the design of a learning management system through UI/UX design and prototyping.",
+      "logo": "assets/daksanaya.jpeg",
+      "url": "",
+      "published": true
+    },
+    {
+      "id": "e3",
+      "role": "Information Systems Laboratory Part-Time Assistant",
+      "company": "BINUS University",
+      "period": "Previous experience",
+      "type": "Teaching & Mentoring",
+      "description": "Supported Information Systems laboratory learning activities and undergraduate students.",
+      "logo": "assets/binus-sis.png",
+      "url": "",
+      "published": true
+    },
+    {
+      "id": "e4",
+      "role": "Information Systems Laboratory Case Study Club Member",
+      "company": "BINUS University",
+      "period": "Previous involvement",
+      "type": "Organization",
+      "description": "Participated in academic case study activities within the Information Systems laboratory community.",
+      "logo": "assets/binus-sis.png",
+      "url": "",
+      "published": true
+    },
+    {
+      "id": "e5",
+      "role": "Freshmen Partner — BINUSIAN 2027",
+      "company": "BINUS University",
+      "period": "Previous involvement",
+      "type": "Mentoring",
+      "description": "Supported freshmen onboarding and campus transition.",
+      "logo": "assets/binus-sis.png",
+      "url": "",
+      "published": true
+    }
+  ],
+  "skills": [
+    {
+      "id": "s1",
+      "name": "Requirement Analysis",
+      "group": "Business & Product",
+      "description": "Business requirements and documentation",
+      "published": true
+    },
+    {
+      "id": "s2",
+      "name": "Process Mapping",
+      "group": "Business & Product",
+      "description": "Process flows and system thinking",
+      "published": true
+    },
+    {
+      "id": "s3",
+      "name": "Microsoft Excel",
+      "group": "Analytics & Data",
+      "description": "PivotTable, VLOOKUP, data analysis, optimization",
+      "published": true
+    },
+    {
+      "id": "s4",
+      "name": "SQL Server",
+      "group": "Analytics & Data",
+      "description": "SQL querying and database concepts",
+      "published": true
+    },
+    {
+      "id": "s5",
+      "name": "SAP Analytics Cloud",
+      "group": "Analytics & Data",
+      "description": "Analytics and visualization tools",
+      "published": true
+    },
+    {
+      "id": "s6",
+      "name": "Tableau",
+      "group": "Analytics & Data",
+      "description": "Data visualization",
+      "published": true
+    },
+    {
+      "id": "s7",
+      "name": "Figma",
+      "group": "Design & Development",
+      "description": "Wireframing and interaction prototyping",
+      "published": true
+    },
+    {
+      "id": "s8",
+      "name": "Visual Paradigm",
+      "group": "Design & Development",
+      "description": "UML modeling and system diagrams",
+      "published": true
+    },
+    {
+      "id": "s9",
+      "name": "HTML & CSS",
+      "group": "Design & Development",
+      "description": "Front-end foundations",
+      "published": true
+    },
+    {
+      "id": "s10",
+      "name": "Java",
+      "group": "Design & Development",
+      "description": "OOP, JavaFX, JDBC",
+      "published": true
+    },
+    {
+      "id": "s11",
+      "name": "Problem Solving",
+      "group": "Professional Strengths",
+      "description": "Analytical and structured thinking",
+      "published": true
+    },
+    {
+      "id": "s12",
+      "name": "Collaboration",
+      "group": "Professional Strengths",
+      "description": "Cross-functional teamwork",
+      "published": true
+    }
+  ],
+  "achievements": [
+    {
+      "id": "a1",
+      "title": "6th Place Finalist — PETROLIDA Business Case Competition",
+      "issuer": "PETROLIDA 2024 / Unilever Indonesia Case",
+      "year": "2024",
+      "description": "MetaMind team placed 6th in the final round, among more than 250 teams registered in the preliminary round.",
+      "image": "assets/petrolida.png",
+      "url": "https://drive.google.com/file/d/1a17N1PvL0PSxXLPsrJwt82NfbZCP-eOs/view?usp=sharing",
+      "published": true
+    },
+    {
+      "id": "a2",
+      "title": "Outstanding Student — School of Information Systems",
+      "issuer": "BINUS University",
+      "year": "2024",
+      "description": "Recognized as an outstanding student; original portfolio states a 3.92 GPA.",
+      "image": "assets/binus-sis.png",
+      "url": "https://drive.google.com/file/d/1Qed7JCZ0bIbyVZZt37XoOVRRe0GD7bci/view?usp=sharing",
+      "published": true
+    },
+    {
+      "id": "a3",
+      "title": "Dedicated Information Systems Laboratory Part-Time Assistant",
+      "issuer": "BINUS University",
+      "year": "2024",
+      "description": "Recognized for teaching commitment and evaluation performance; original portfolio records an average evaluation score of 3.77/4.00.",
+      "image": "assets/binus-sis.png",
+      "url": "https://drive.google.com/file/d/1WOXKSE_t6YM-y32MKX2TsANuwCNhaTLw/view?usp=sharing",
+      "published": true
+    },
+    {
+      "id": "a4",
+      "title": "Top 20 — Catalyst Leap Mini Case Competition",
+      "issuer": "Catalyst Leap / GOKS x LINE",
+      "year": "2024",
+      "description": "HayDay team finished 17th out of 45 participating teams.",
+      "image": "assets/catalyst.png",
+      "url": "https://drive.google.com/drive/folders/1mG_1N1koxNidmbbHxDglafh6FPF1opQM?usp=sharing",
+      "published": true
+    },
+    {
+      "id": "a5",
+      "title": "Semifinalist — DIG IN Business Case Competition",
+      "issuer": "DIG IN / Starbucks Case",
+      "year": "2023",
+      "description": "DataDynamos team reached the semifinal stage among more than 80 registered teams.",
+      "image": "assets/binus-sis.png",
+      "url": "https://drive.google.com/file/d/1SmbSsrjhaEXZcULT-xXGw8Vy5BPGnEHk/view?usp=sharing",
+      "published": true
+    },
+    {
+      "id": "a6",
+      "title": "Finalist — BASIC UI/UX Design Competition",
+      "issuer": "BINUS University / Satu University Case",
+      "year": "2023",
+      "description": "DataDynamos team was a finalist in the UI/UX design category among more than 90 registered teams.",
+      "image": "assets/basic.png",
+      "url": "https://drive.google.com/file/d/1JZ-gobfdv-5utLUJaFGAojEZnhOapLn6/view?usp=sharing",
+      "published": true
+    }
+  ],
+  "certifications": [
+    {
+      "id": "c1",
+      "title": "ASEAN Data Science Explorers — SAP Analytics Cloud & SAP Build Apps",
+      "issuer": "ASEAN Foundation, SAP Southeast Asia & Dampak Sosial Indonesia",
+      "year": "2024",
+      "description": "Enablement training session on SAP Analytics Cloud and SAP Build Apps.",
+      "image": "assets/asean.png",
+      "url": "https://drive.google.com/file/d/16NdT2t-ULUA5J1uyPNG9y77Gvo4P1EfV/view?usp=drive_link",
+      "published": true
+    }
+  ],
+  "education": [
+    {
+      "id": "ed1",
+      "institution": "BINUS University",
+      "degree": "Information Systems — Business Analytics",
+      "period": "",
+      "description": "Information Systems background with a focus on business analytics and technology.",
+      "logo": "assets/binus.png",
+      "published": true
+    }
+  ]
+}
