@@ -1,5 +1,4 @@
-// Generated snapshot of data/portfolio.json for direct file:// preview.
-// The hosted website always reads data/portfolio.json as its primary source.
+// Offline copy of data/portfolio.json. On GitHub Pages, the website reads JSON directly.
 window.XANDER_PORTFOLIO_FALLBACK = {
   "site": {
     "brand": "XANDER.",
@@ -14,7 +13,7 @@ window.XANDER_PORTFOLIO_FALLBACK = {
   "profile": {
     "name": "Christopher Alexander Sutandhya",
     "shortName": "Christopher Alexander",
-    "role": "IT Business Analyst",
+    "role": "IT Business Analyst Professional",
     "headline": "Bridging business needs with thoughtful digital solutions.",
     "intro": "I turn complex business requirements into structured processes, intuitive experiences, and practical technology solutions.",
     "about": "With a background in Information Systems and Business Analytics, I enjoy connecting people, processes, and technology. My work spans business analysis, financial analysis, and UI/UX design, with an emphasis on clarity, collaboration, and measurable value.",
