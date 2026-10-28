@@ -1,3 +1,13 @@
+# Release 2 — CMS Security & One-Commit Publish (28 October 2026)
+
+**Recommended update to an existing live website:** use `Xander_Portfolio_PATCH_ONLY.zip` rather than replacing your production `data/portfolio.json` / `data/portfolio-fallback.js` files. The full source ZIP contains a snapshot of the uploaded file and may not reflect edits made on the live GitHub repository since that snapshot.
+
+**Security limit:** Public GitHub Pages content is public, including JSON, JS, assets and repository history. The CMS now omits `published:false` entries and unknown JSON fields from new public commits. This does **not** make rendered portfolio data secret or retroactively erase old commits. The token vault encrypts at rest with a separate user-selected passphrase, but cannot withstand hostile same-origin JavaScript, XSS or browser malware. Prefer a trusted personal computer, HTTPS, and repository-limited short-expiry tokens.
+
+**New release notes:** See `PANDUAN-UPDATE-V2.md` for instructions in Indonesian.
+
+---
+
 # Xander Portfolio — Modern Professional Bento + JSON CMS
 
 Project revamp from the original `Project Website Asal.zip`. **Production stack: pure HTML, CSS, JavaScript, JSON.** No SQL database, PHP, Node server, or front-end build tools required.
@@ -8,7 +18,7 @@ Project revamp from the original `Project Website Asal.zip`. **Production stack:
 - `Sign-In.html` — custom CMS sign-in page using the requested username and a PBKDF2 password *verifier* (not plaintext). The public website now has a persistent **Sign In** button in its header (including mobile) linking directly to this page.
 - `admin.html` — CMS dashboard for editing profile, projects, experience, skills, achievements, education, certificates, colors, SEO, and social links.
 - `data/portfolio.json` — **single source of truth** for production data.
-- `data/portfolio-fallback.js` — generated JSON snapshot for opening `index.html` / CMS directly from a local folder (`file://`). The hosted site uses the latest JSON from the repository.
+- `data/portfolio-fallback.js` — generated public-only snapshot for opening `index.html` / CMS directly from a local folder (`file://`). The hosted site uses the latest JSON from the repository.
 - `js/site.js` — renders production content from JSON; no need to change HTML whenever the content changes.
 - `js/admin.js` — edits and previews JSON; saves local drafts and publishes using GitHub REST Contents API.
 - `js/auth-config.js` — client-side password-verifier configuration, **not server-side authentication**.
@@ -25,7 +35,7 @@ Project revamp from the original `Project Website Asal.zip`. **Production stack:
 
 To preview real-time production JSON locally (recommended for testing GitHub-style data loading), use the **Live Server extension in VS Code** and open the website using the localhost URL provided by the extension.
 
-To refresh offline data **without touching any code**, open the CMS dashboard, edit your content and use both **Export JSON** and **Export offline JS**. Place the two downloaded files in the `data/` folder (replace `portfolio.json` and `portfolio-fallback.js`). On GitHub, the Publish button also syncs the offline snapshot file after publishing the JSON; the production site uses JSON directly.
+To refresh offline data **without touching any code**, open the CMS dashboard, edit your content and use both **Export JSON** and **Export offline JS**. Place the two downloaded files in the `data/` folder (replace `portfolio.json` and `portfolio-fallback.js`). On GitHub, the Publish button syncs both public data files in one commit; the production site uses JSON directly.
 
 ## GitHub Pages hosting
 
@@ -35,8 +45,8 @@ To refresh offline data **without touching any code**, open the CMS dashboard, e
 4. The public URL is generally `https://ACCOUNT.github.io/REPOSITORY/` for a project repository, or `https://ACCOUNT.github.io/` when the repository is named `ACCOUNT.github.io`.
 5. Open the live `Sign-In.html` URL, log in, and open **GitHub & Publish** in the CMS sidebar.
 6. Create a *fine-grained Personal Access Token* at https://github.com/settings/personal-access-tokens/new. Choose your user as resource owner; restrict repository access to your **portfolio repository only**; permission **Contents: Read and write**. Do not grant access to other repositories or share the token.
-7. Enter GitHub **owner**, **repository name**, **branch**, and token, then click **Test & connect**. The token is kept in JavaScript memory for the open tab and is **not saved to localStorage, JSON, or source code**.
-8. Edit in CMS → **Preview** → **Publish JSON changes**. This writes a GitHub commit to `data/portfolio.json` and then syncs `data/portfolio-fallback.js` to keep offline copies current. GitHub Pages will redeploy from the configured branch; a change is not guaranteed to be visible *immediately* because deployment and caches can take time.
+7. Enter GitHub **owner**, **repository name**, **branch**, and token, then click **Test & connect**. Optionally enter a separate vault passphrase (minimum 12 characters) so the token is saved **encrypted** in browser localStorage; after reopening CMS, use **Unlock saved token** and the passphrase. Without a passphrase, the token is memory-only. No raw token is written to repository files.
+8. Edit in CMS → **Preview** → **Publish JSON changes**. This writes **one Git commit** containing both `data/portfolio.json` and `data/portfolio-fallback.js` (not two separate commits). Only explicitly supported fields and published entries are included. GitHub Pages will redeploy from the configured branch; a change is not guaranteed to be visible *immediately* because deployment and caches can take time.
 9. If you change the published website manually outside the CMS, choose **Reload published JSON** before editing to avoid overwriting other changes.
 
 **Media:** use the Media Library after connecting GitHub. Images upload directly into `assets/uploads/` via GitHub API (this creates an immediate commit), then paste the returned relative path into the relevant content field and publish the updated JSON. Upload max 2 MB and don't upload confidential images.

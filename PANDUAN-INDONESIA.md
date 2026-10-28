@@ -1,3 +1,11 @@
+# Penting — Panduan Update Versi 2
+
+Untuk update website yang **sudah online**, gunakan ZIP PATCH_ONLY (hanya source code baru), bukan mengunggah ulang data JSON lama. Panduan khusus ada di `PANDUAN-UPDATE-V2.md`.
+
+Data `data/portfolio.json` memang dapat dibaca siapa pun di repo/Pages yang publik. Tidak ada cara mengubahnya menjadi rahasia hanya dengan HTML/CSS/JS. Versi 2 memastikan konten berstatus `published:false` serta field yang tidak dikenali **tidak ikut di-publish ke JSON publik berikutnya**; konten itu tetap di draft browser lokal. Git history sebelum pembaruan tetap publik.
+
+---
+
 # Panduan Penggunaan — Xander Portfolio (Konsep A)
 
 ## Ringkasan arsitektur
@@ -16,7 +24,7 @@ Sekarang Anda dapat membuka `index.html` dengan double-click di Windows. Untuk m
 - **Online / localhost:** yang dibaca adalah `data/portfolio.json` terbaru (jika JSON gagal dimuat, fallback tetap tersedia).
 - **Offline / double-click:** yang dibaca adalah `data/portfolio-fallback.js` yang dipaketkan dalam ZIP.
 - **CMS lokal:** draft disimpan di browser, dan bisa diperiksa lewat tombol Preview. Agar file lokal permanen terbarui, gunakan Export JSON dan Export offline JS, lalu gantikan kedua file tersebut di folder `data/`. Hal ini merupakan batasan keamanan browser, bukan error.
-- Untuk memperbarui kedua file tanpa coding: di CMS gunakan **Export JSON** dan **Export offline JS**, kemudian letakkan kedua file hasil unduhan dengan nama `portfolio.json` dan `portfolio-fallback.js` di folder `data/`. Saat Publish ke GitHub, CMS akan mengunggah file JSON terlebih dahulu lalu mencoba menyinkronkan JS snapshot secara otomatis.
+- Untuk memperbarui kedua file tanpa coding: di CMS gunakan **Export JSON** dan **Export offline JS**, kemudian letakkan kedua file hasil unduhan dengan nama `portfolio.json` dan `portfolio-fallback.js` di folder `data/`. Saat Publish ke GitHub, CMS menyimpan JSON publik dan JS snapshot dalam SATU commit secara atomik.
 - **GitHub Pages:** konten yang sudah dipublikasikan dibaca langsung dari file JSON di repository. Publikasi GitHub tetap mengikuti petunjuk di bawah.
 
 ## Langkah 1 — Upload project ke GitHub
@@ -56,7 +64,7 @@ Sekarang Anda dapat membuka `index.html` dengan double-click di Windows. Untuk m
 7. Klik **Publish JSON changes** untuk menyimpan perubahan ke repository.
 8. GitHub Pages akan melakukan deployment. **Tidak selalu instan**; sesuai dokumentasi GitHub, proses publikasi dapat memerlukan beberapa menit, bahkan hingga sekitar 10 menit.
 
-**Token hanya digunakan dalam memori tab CMS yang sedang terbuka**, bukan disimpan di source code atau `localStorage`. Setelah refresh halaman, masukkan token dan lakukan koneksi lagi jika akan memublikasikan perubahan.
+**Token dapat disimpan terenkripsi di localStorage** menggunakan frasa sandi vault terpisah minimal 12 karakter. Token asli tidak disimpan dalam teks biasa dan tidak dimasukkan ke repository. Setiap membuka tab CMS baru, ketik frasa sandi vault lalu klik **Unlock saved token**; tidak perlu menempel ulang token. Jika tidak menggunakan vault, token hanya di memori tab.
 
 ## Langkah 5 — Mengubah foto atau gambar
 
