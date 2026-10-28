@@ -1,5 +1,4 @@
-// Generated snapshot of data/portfolio.json for direct file:// preview.
-// The hosted website always reads data/portfolio.json as its primary source.
+// Offline public copy of portfolio.json. On GitHub Pages, the website reads JSON directly.
 window.XANDER_PORTFOLIO_FALLBACK = {
   "site": {
     "brand": "XANDER.",
@@ -39,8 +38,8 @@ window.XANDER_PORTFOLIO_FALLBACK = {
     ]
   },
   "socials": {
-    "linkedin": "",
-    "github": "",
+    "linkedin": "https://id.linkedin.com/in/christopher-alexander-sutandhya",
+    "github": "https://calexander2004.github.io/Christopher_Alexander_Sutandhya/",
     "instagram": "https://www.instagram.com/christalexander_2004/",
     "other": ""
   },
