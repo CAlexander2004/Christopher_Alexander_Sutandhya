@@ -12,11 +12,11 @@ window.XANDER_PORTFOLIO_FALLBACK = {
   },
   "profile": {
     "name": "Christopher Alexander Sutandhya",
-    "shortName": "Christopher Alexander",
+    "shortName": "Christopher Alexander Sutandhya",
     "role": "IT Business Analyst",
-    "headline": "Bridging business needs with thoughtful digital solutions.",
-    "intro": "I turn complex business requirements into structured processes, intuitive experiences, and practical technology solutions.",
-    "about": "With a background in Information Systems and Business Analytics, I enjoy connecting people, processes, and technology. My work spans business analysis, financial analysis, and UI/UX design, with an emphasis on clarity, collaboration, and measurable value.",
+    "headline": "Transforming business complexity into technology that delivers value",
+    "intro": "I bridge business needs and technical execution by translating complex requirements into clear functional specifications, optimized workflows, and practical system solutions—from analysis and design through testing and implementation.",
+    "about": "With a background in Information Systems and Business Analytics, I focus on translating complex business needs into clear requirements, streamlined processes, and practical technology solutions. My work combines business and systems analysis, functional documentation, stakeholder collaboration, and user-centered design, supported by perspectives from financial analysis and UI/UX. I strive to bridge business and technology through structured thinking, effective collaboration, and solutions that deliver meaningful business value.",
     "location": "Indonesia",
     "email": "christalexander2004@gmail.com",
     "photo": "assets/profile.jpg",
@@ -25,11 +25,11 @@ window.XANDER_PORTFOLIO_FALLBACK = {
     "highlights": [
       {
         "label": "Core focus",
-        "value": "Business Analysis"
+        "value": "Business & Systems Analysis"
       },
       {
         "label": "Approach",
-        "value": "People × Process × Tech"
+        "value": "People × Process × Technology"
       },
       {
         "label": "Background",
